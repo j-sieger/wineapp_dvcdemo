@@ -35,10 +35,15 @@ then use git add. and commit, push like as usual.
 dvc params diff
 dvc metrics show
 ```
+running the test cases
+`pytest -v`
 
-pytest -v
+## Building a package with tox and testing
+`tox`
+Rebuildig
+`tox -r`
 
- Create a setup.py file and below command to create package.
+Create a setup.py file and below command to create package.
 pip install -e .
 
 Below command will create distribution. then any can install this library that got created in './dist' after below command.
@@ -46,4 +51,5 @@ Below command will create distribution. then any can install this library that g
 python setup.py sdist bdist_wheel
 ```
 But it is not required deleting the `./build` and `./dist` from our project.
+
 
