@@ -1,3 +1,10 @@
+# local package install
+-e .
+
+# external package installation
 dvc
 dvc[gdrive]
 sklearn
+pandas
+pytest
+tox
