@@ -30,3 +30,8 @@ Creating stages of dvc
 dvc repro
 ```
 then use git add. and commit, push like as usual.
+
+```
+dvc params diff
+dvc metrics show
+```
