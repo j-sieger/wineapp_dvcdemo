@@ -39,7 +39,9 @@ running the test cases
 `pytest -v`
 
 ## Building a package with tox and testing
-```tox```
+```
+tox
+```
 Rebuildig
 ```
 tox -r
