@@ -25,3 +25,8 @@ git branch -M main
 git push -u origin main
 ```
 
+Creating stages of dvc
+```
+dvc repro
+```
+then use git add. and commit, push like as usual.
