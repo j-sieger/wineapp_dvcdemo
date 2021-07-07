@@ -39,9 +39,11 @@ running the test cases
 `pytest -v`
 
 ## Building a package with tox and testing
-`tox`
+```tox```
 Rebuildig
-`tox -r`
+```
+tox -r
+```
 
 Create a setup.py file and below command to create package.
 pip install -e .
