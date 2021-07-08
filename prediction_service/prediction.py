@@ -63,7 +63,7 @@ def validate_input(dict_request):
 def form_response(dict_request):
     if validate_input(dict_request):
         data = dict_request.values()
-        data = [list(map(float,data))]
+        data = [list(map(float, data))]
         response = predict(data)
         return response
 
