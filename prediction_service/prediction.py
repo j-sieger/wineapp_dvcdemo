@@ -13,7 +13,7 @@ class NotInRange(Exception):
         self.message = message
         super().__init__(self.message)
 
-class NotInc(Exception):
+class NotInCols(Exception):
     def __init__(self, message="Not in columns"):
         self.message = message
         super().__init__(self.message)
@@ -48,7 +48,7 @@ def validate_input(dict_request):
         schema = get_schema()
         actual_cols = schema.keys()
         if col not in actual_cols:
-            raise NotInc
+            raise NotInCols
     def _validate_values(col,val):
         schema = get_schema()
         if not (schema[col]["min"] <= float(dict_request[col]) <= schema[col]["max"]):
