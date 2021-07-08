@@ -56,4 +56,22 @@ python setup.py sdist bdist_wheel
 ```
 But it is not required deleting the `./build` and `./dist` from our project.
 
+## MLFlow
 
+Create a new branch and start working 
+```
+$ git checkout -b main-mlflow
+To create a new branch and switch to it at the same time
+```
+Below one also can be used
+```
+$ git branch main-mlflow
+$ git checkout main-mlflow
+```
+
+### ml flow server commands
+```bash
+mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./artifacts --host 0.0.0.0 -p 1234
+```
+While the server is running use `http://0.0.0.0:1234/` or `http://192.168.43.95:1234/` to access the mlflow server
+ 
