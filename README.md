@@ -1,3 +1,5 @@
+`conda create -n winq python 3.8 -y`
+
 ```
 pip install cookiercutter
 
