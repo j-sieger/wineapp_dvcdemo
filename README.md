@@ -44,13 +44,13 @@ running the test cases
 ```
 tox
 ```
-Rebuildig
+Rebuildig. Can use the below command from next time onwards
 ```
 tox -r
 ```
 
 Create a setup.py file and below command to create package.
-pip install -e .
+```pip install -e .```
 
 Below command will create distribution. then any can install this library that got created in './dist' after below command.
 ```
